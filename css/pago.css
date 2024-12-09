@@ -595,7 +595,7 @@ header.sticky {
 
 /* BOTÓN BORRAR CARRITO ARREGLAR */
 .remove-item {
-    background: var(--bg-color);
+    background: white;
     color: white;
     box-shadow: none;
     border: none;
