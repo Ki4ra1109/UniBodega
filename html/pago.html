@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniBodega SpA</title>
+    <link rel="stylesheet" href="../css/pago.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+
+        <a href="/index.html" class="logo"><i class="bx bx-home"></i>UniBo SpA</a>
+
+        <ul class="navlist">
+            <li><a href="/index.html" class="active">Inicio</a></li>
+            <li><a href="/html/sobre.html">Sobre UniBo</a></li>
+            <li><a href="/html/catalogo.html">Catálogo</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+        <!-- NAVBAR-->
+        <div class="nav-icons">
+            <a href="#"><i class="bx bx-search"></i></a>
+            <a href="#shop" id="carrito">
+                <i class="bx bx-cart">
+                    <!-- CONTADOR DEL CARRITO -->
+                    <span id="number-carrito" class="cart-counter">0</span>
+                </i>
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+        <!-- MENÚ DE CARRITO-->
+        <div id="cart-overlay"></div>
+        <div id="cart-menu" class="carrito-content">
+            <h2>Mi carrito</h2>
+            <ul class="carrito-list" id="cart-items">
+                <li id="empty-message" class="empty-message">El carrito está vacío</li>
+            </ul>
+
+            <!-- Total -->
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total">0</span></p>
+            </div>
+            <div></div>
+
+            <!-- Nuevo botón de finalizar compra -->
+            <button id="finalizar-compra" class="btn finalizar-compra">Finalizar compra</button>
+
+            <div class="cart-buttons">
+                <button id="close-cart" class="btn">Cerrar</button>
+                <button id="empty-cart" class="btn">Vaciar carrito</button>
+            </div>
+
+
+
+        </div>
+
+    </header>
+
+    <!-- HOME -->
+
+    <section class="home" id="home">
+
+        <div class="home-text">
+            <h1> <span>Muchas gracias</span> por utilizar <br> nuestra página.<br>Próximamente tendremos<br> métodos de
+                pago.</h1>
+        </div>
+        <div class="home-img">
+            <img src="../img/gato.webp" alt="poleron">
+        </div>
+
+    </section>
+
+    <section class="shop" id="shop">
+        <div class="middle-text">
+            <h2>Tu total fue de</h2>
+        </div>
+    </section>
+
+
+
+    <!--Scroll -->
+
+    <a href="#" class="scroll">
+        <i class="bx bx-up-arrow-alt"></i>
+    </a>
+
+    <!--Mobile-->
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../js/pago.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
