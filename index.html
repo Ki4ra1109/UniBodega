@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniBodega SpA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header>
+
+        <a href="index.html" class="logo"><i class="bx bx-home"></i>UniBo SpA</a>
+
+        <ul class="navlist">
+            <li><a href="#home" class="active">Inicio</a></li>
+            <li><a href="#about">Sobre UniBo</a></li>
+            <li><a href="#shop">Catálogo</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+        <!-- NAVBAR-->
+        <div class="nav-icons">
+            <a href="#"><i class="bx bx-search"></i></a>
+            <a href="#shop" id="carrito">
+                <i class="bx bx-cart">
+                    <!-- CONTADOR DEL CARRITO -->
+                    <span id="number-carrito" class="cart-counter">0</span>
+                </i>
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+        <!-- MENÚ DE CARRITO-->
+        <div id="cart-overlay"></div>
+        <div id="cart-menu" class="carrito-content">
+            <h2>Mi carrito</h2>
+            <ul class="carrito-list" id="cart-items">
+                <li id="empty-message" class="empty-message">El carrito está vacío</li>
+            </ul>
+
+            <!-- Total -->
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total">0</span></p>
+            </div>
+            <div></div>
+
+            <!-- Nuevo botón de finalizar compra -->
+            <button id="finalizar-compra" class="btn finalizar-compra">Finalizar compra</button>
+
+            <div class="cart-buttons">
+                <button id="close-cart" class="btn">Cerrar</button>
+                <button id="empty-cart" class="btn">Vaciar carrito</button>
+            </div>
+
+
+
+        </div>
+
+    </header>
+
+    <!-- HOME -->
+
+    <section class="home" id="home">
+
+        <div class="home-text">
+            <h1>Lúcete con <br><span>UniBo</span> <br> y representa <br>con orgullo <br> tu universidad</h1>
+            <a href="html/catalogo.html" class="btn"> Explorar Catálogo<i class="bx bxs-right-arrow"></i></a>
+            <a href="#" class="btn2">Comprar ahora</a>
+        </div>
+        <div class="home-img">
+            <img src="img/poleron.jpg" alt="poleron">
+        </div>
+    </section>
+
+    <!-- CONTAINER -->
+
+    <section class="container">
+        <div class="container-box">
+            <img src="img/horario.svg" alt="">
+            <h3>10:00 AM - 8:00 PM</h3>
+            <a href="#">Horario de atención</a>
+        </div>
+        <div class="container-box">
+            <img src="img/3722026.png" alt="">
+            <h3>Universidad de Santiago<br>de Chile</h3>
+            <a
+                href="https://www.google.com/maps/place/Universidad+de+Santiago+de+Chile/@-33.4502791,-70.6808843,19.05z/data=!3m1!5s0x9662c457ee9001e5:0x77bba36c0f62d4b!4m15!1m8!3m7!1s0x9662c4f80ae92ea5:0x1b89026df4b984f1!2s9170022+Santiago,+Estación+Central,+Región+Metropolitana!3b1!8m2!3d-33.4507014!4d-70.679789!16s%2Fg%2F11stns6349!3m5!1s0x9662c457f2073c5b:0x322436a09fa71133!8m2!3d-33.450439!4d-70.6801393!16zL20vMDJ5OTlm?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D">Obtener
+                Direcciones</a>
+        </div>
+        <div class="container-box">
+            <img src="img/contacto.svg" alt="">
+            <h3>+569 99999999</h3>
+            <a href="#">Número de Contacto</a>
+        </div>
+    </section>
+
+    <!-- SOBRE UNIBO-->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/auto.jpg" alt="stand">
+        </div>
+        <div class="about-text">
+            <h2>UniBodega SpA <br> te complementa</h2>
+            <p>
+                En UniBodega somos una empresa dedicada a revolucionar el merchandising universitario mediante
+                estrategias de venta innovadoras que maximizan la experiencia de compra. <br><br>Ofrecemos productos
+                únicos y representativos de la universidad, fomentando el sentido de comunidad y atrayendo a nuevos
+                estudiantes.
+
+            </p>
+            <a href="html/sobre.html" class="btn2">Conoce más<i class="bx bxs-right-arrow"></i></a>
+        </div>
+    </section>
+    <!-- CATALOGO -->
+    <section class="shop" id="shop">
+        <div class="middle-text">
+            <h4>Nuestra Tienda</h4>
+            <h2>Productos más vendidos</h2>
+        </div>
+        <div class="shop-content">
+            <div class="row" data-id="34" data-name="Llavero cuadrado" data-price="2500" data-img="/img/llavero.jpg">
+                <img src="img/llavero.jpg" alt="Llavero">
+                <h3>Llavero cuadrado</h3>
+                <p>Llavero grabado de acero inoxidable</p>
+                <div class="in-text">
+                    <div class="price">
+                        <h6>$2.500</h6>
+                    </div>
+                    <div class="s-btn" data-id="1">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="top-icon">
+                    <a href="#"><i class="bx bx-heart"></i></a>
+                </div>
+            </div>
+
+
+            <div class="row" data-id="10" data-name="Poleron Negro" data-price="9000" data-img="/img/poleron2.jpg">
+                <img src="img/poleron2.jpg" alt="Poleron Negro">
+                <h3>Poleron Negro</h3>
+                <p>Poleron negro con la parte superior de color naranjo</p>
+                <div class="in-text">
+                    <div class="price">
+                        <h6>$9.000</h6>
+                    </div>
+                    <div class="s-btn">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="top-icon">
+                    <a href="#"><i class="bx bx-heart"></i></a>
+                </div>
+            </div>
+
+            <!-- Producto Lapiz -->
+            <div class="row" data-id="32" data-name="Lapiz" data-price="1000" data-img="/img/lapiz.jpg">
+                <img src="img/lapiz.jpg" alt="Lapiz">
+                <h3>Lapiz</h3>
+                <p>Lapiz grafito grabado de madera</p>
+                <div class="in-text">
+                    <div class="price">
+                        <h6>$1.000</h6>
+                    </div>
+                    <div class="s-btn">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="top-icon">
+                    <a href="#"><i class="bx bx-heart"></i></a>
+                </div>
+            </div>
+
+            <!-- Producto Estuche -->
+            <div class="row" data-id="27" data-name="Estuche" data-price="5000" data-img="/img/estuche.jpg">
+                <img src="img/estuche.jpg" alt="Estuche">
+                <h3>Estuche</h3>
+                <p>Estuche de tela grabado de color negro</p>
+                <div class="in-text">
+                    <div class="price">
+                        <h6>$5.000</h6>
+                    </div>
+                    <div class="s-btn">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="top-icon">
+                    <a href="#"><i class="bx bx-heart"></i></a>
+                </div>
+            </div>
+            <!--HACER LO MISMO TODO EL RATO PARA AGREGAR NUEVOS PRODUCTOS-->
+        </div>
+        <div class="row-btn">
+            <a href="html/catalogo.html" class="btn">Todos los productos <i class="bx bxs-right-arrow"></i></a>
+        </div>
+    </section>
+
+    <!-- CONTACTO   -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+
+            <div class="contact-text">
+                <h2>Contáctanos</h2>
+
+
+                <div class="social">
+                    <a href="#" class="clr"><i class="bx bxl-instagram-alt"></i></a>
+                </div>
+            </div>
+            <div class="details">
+                <div class="maind-d">
+                    <a
+                        href="https://www.google.com/maps/place/Austria+2182,+7510598+Providencia,+Región+Metropolitana/@-33.4344995,-70.6082113,17z/data=!3m1!4b1!4m6!3m5!1s0x9662cf76c1bee83f:0x468bc67d1b022301!8m2!3d-33.4344995!4d-70.6056364!16s%2Fg%2F11g92rp7r6?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"><i
+                            class="bx bxs-location-plus">Austria 2182 Providencia, Chile</i></a>
+                </div>
+                <div class="maind-d">
+                    <a href="#"><i class="bx bx-mobile-alt"> +569 99999999</i></a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--Scroll -->
+
+    <a href="#" class="scroll">
+        <i class="bx bx-up-arrow-alt"></i>
+    </a>
+
+    <!--Mobile-->
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
+</html>
