@@ -88,7 +88,7 @@ function updateCartDisplay() {
         item.classList.add('cart-item');
 
         item.innerHTML = `
-            <img src="${product.img}" alt="${product.name}" class="cart-item-img">
+            <img src=".${product.img}" alt="${product.name}" class="cart-item-img">
             <div class="cart-item-info">
                 <h4>${product.name}</h4>
                 <p>Precio: $${product.price.toFixed()}</p>
