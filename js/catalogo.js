@@ -95,7 +95,7 @@ function updateCartDisplay() {
                 <p>Cantidad: ${product.quantity}</p>
             </div>
             <button class="remove-item" data-id="${product.id}" aria-label="Eliminar producto">
-                <img src="/img/icon-trash.png" alt="Eliminar" class="icon-trash">
+                <img src="./img/icon-trash.png" alt="Eliminar" class="icon-trash">
             </button>
         `;
 
